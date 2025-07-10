@@ -5,8 +5,8 @@
     - Imagens, videos, audios
 - Markup
     - Marcacao
-    - Tags: <a>pinto</a>
-    - Atributos: <a href="pinto.com">
+    - Tags: <a>link</a>
+    - Atributos: <a href="link.com">
     - globais: id, class, ...
 - Language
     - Linguagem
