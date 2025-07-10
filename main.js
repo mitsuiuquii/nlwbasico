@@ -50,7 +50,6 @@ const perguntarIA = async (question, game, apiKey) => {
         google_search: {}
     }]
 
-    // chamada API
     const response = await fetch(geminiURL, {
         method: 'POST',
         headers: {
@@ -82,7 +81,7 @@ const enviarFormulario = async (event) => {
     askButton.classList.add('loading');
 
     try {
-        // perguntar para a IA
+
         const text = await perguntarIA(question, game, apiKey);
         aiResponse.querySelector('.response-content').innerHTML = markdownToHTML(text)
         aiResponse.classList.remove('hidden')
