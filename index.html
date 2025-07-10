@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro HTML</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo eSports NLW">
+    </header>
+
+    <main>
+        <section>
+            <div>
+            <h2 class="tittle">Assistente de Meta</h2>
+            <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
+            
+                <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+
+                <select id="gameSelect">
+                   <form id="form"> <option value="">Selecione um jogo</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="lol">League of Legends</option>
+                    <option value="cs2">Counter Strike 2</option>
+                    <option value="rl">Rocket League</option>
+                    <option value="eafc">EA FC</option>
+                </select>
+
+                <input id="questionInput" type="text" placeholder="Ex: Melhor atacante do EA FC..." required>
+
+                <button id="askButton">Perguntar</button>
+                    <div id="mensagem"></div>
+            </form>
+
+            <div id="aiResponse" class="hidden">
+                <div class="response-content">
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
